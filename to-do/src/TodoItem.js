@@ -1,10 +1,13 @@
 import React from "react";
+import "./styles/TodoItem.css"
+import { FcCheckmark } from "react-icons/fc";
+import { BiTrashAlt } from "react-icons/bi";
 function TodoItem(props) {
     return(
         <li>
-            <span>C</span>
+            <input type="radio"></input>
             <p>{props.text}</p>
-            <span>X</span>
+            <BiTrashAlt className="clear"/>
         </li>
     )
 }

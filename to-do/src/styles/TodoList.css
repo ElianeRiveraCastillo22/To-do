@@ -1,0 +1,10 @@
+.todoList{
+    height: 70%;
+    width: 100%;
+    list-style:none
+}
+ul{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
