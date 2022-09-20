@@ -1,12 +1,24 @@
 import React from "react";
 import './styles/TodoSearch.css'
 import { FcSearch } from "react-icons/fc";
-function TodoSearch(params) {
-  return (
+function TodoSearch({searchValue,setsearchValue}) {
+
+const onSearchValueChange=(event)=>{
+  setsearchValue(event.target.value)
+}
+
+  return [
     <section className="todoSearch">
-      <input placeholder="Cebollas" />
+      <input
+        placeholder="Cebollas"
+        value={searchValue}
+        onChange={onSearchValueChange}
+      />
       <FcSearch className="clearIcon"/>
-    </section>
-  );
+    </section>,
+    <p>{searchValue}</p>
+  ]  ;
+
+
 }
 export { TodoSearch };

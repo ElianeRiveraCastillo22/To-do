@@ -6,7 +6,7 @@ li{
     flex-direction: row;
     align-items: center;
 }
-li input{
+li .check{
     height: 100%;
     width: 5%;    
     display: flex;
@@ -31,3 +31,10 @@ li p{
 .clear{
     font-size: 1.8rem;
 }
+.clear:hover{
+    color: red;
+}
+.checkSelected{
+    color: green;
+}
+
