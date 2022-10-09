@@ -1,5 +1,5 @@
 import React from "react";
-import './styles/TodoSearch.css'
+import './TodoSearch.css'
 import { FcSearch } from "react-icons/fc";
 function TodoSearch({searchValue,setsearchValue}) {
 
